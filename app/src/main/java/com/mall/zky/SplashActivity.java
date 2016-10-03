@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             intent = new Intent(this,GuidActivity.class);
         }
 
-        //三秒引导时间
+        //三秒引导时间....
         new Thread(){
             @Override
             public void run() {
