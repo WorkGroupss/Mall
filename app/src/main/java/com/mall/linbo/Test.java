@@ -5,4 +5,6 @@ package com.mall.linbo;
  */
 
 public class Test {
+    String name;
+
 }
