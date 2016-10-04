@@ -10,8 +10,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity" />
 
-        <activity android:name=".zky.GuidActivity" />
-        <activity android:name=".zky.SplashActivity">
+        <activity android:name=".guid.GuidActivity" />
+        <activity android:name=".guid.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

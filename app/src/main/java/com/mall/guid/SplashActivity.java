@@ -1,15 +1,11 @@
-package com.mall.zky;
+package com.mall.guid;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ActionMode;
 import android.view.View;
-import android.view.ViewTreeObserver;
-import android.view.WindowManager;
 
 import com.mall.MainActivity;
 import com.mall.R;
