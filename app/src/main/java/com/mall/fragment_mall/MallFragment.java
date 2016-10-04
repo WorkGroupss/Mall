@@ -1,4 +1,4 @@
-package com.mall.fragment_mine;
+package com.mall.fragment_mall;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.mall.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class mine_fragment extends Fragment {
+public class MallFragment extends Fragment {
 
 
-    public mine_fragment() {
+    public MallFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class mine_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lesson_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_mall, container, false);
     }
 
 }
