@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mall.activity.SearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ea2000"
+            android:weightSum="1">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.84">
+
+            </android.support.v7.widget.SearchView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="search"
+                android:gravity="center_vertical|right"
+                android:textColor="#ffffff"
+                android:text="搜索"
+                android:layout_weight="0.24" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/search_table"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ea2000"
+        app:tabTextColor="#99ffffff"
+        app:tabIndicatorColor="#99ffffff"
+        app:tabSelectedTextColor="#ffffff">
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#f0f1f2"
+            android:gravity="center">
+            <RadioGroup
+                android:id="@+id/radioGroup_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:button="@null"
+                    android:textColor="#ea2000"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:text="护肤"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="日化清洁"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="彩妆"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="香水"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="身体护理"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="化妆工具"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="健康保养"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+        <GridView
+            android:id="@+id/search_grid"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            >
+
+        </GridView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
