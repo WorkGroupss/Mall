@@ -35,13 +35,12 @@ public class MainActivity extends AppCompatActivity {
             Window window =getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(0xff000000);
-
         }
-        initshow();
+        initShow();
         initView();
     }
 
-    private void initshow() {
+    private void initShow() {
         fragments.add(new LessonFragment());
         fragments.add(new MallFragment());
         fragments.add(new CartFragment());
@@ -53,33 +52,32 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup_foot);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                                  @Override
-                                                  public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                                                      Fragment fragment = null;
-                                                      if (i==R.id.radioButtonX){
-                                                          return;
-                                                      }
-                                                      switch (i) {
-                                                          case R.id.radioButton1:
-                                                              fragment = fragments.get(0);
-                                                              break;
-                                                          case R.id.radioButton2:
-                                                              fragment = fragments.get(1);
-                                                              break;
-                                                          case R.id.radioButton3:
-                                                              fragment = fragments.get(2);
-                                                              break;
-                                                          case R.id.radioButton4:
-                                                              fragment = fragments.get(3);
-                                                              break;
-                                                      }
-                                                      load(fragment);
-                                                  }
-                                              }
+        radioGroup.setOnCheckedChangeListener(
+                new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                        Fragment fragment = null;
+                        if (i==R.id.radioButtonX){
+                            return;
+                        }
+                        switch (i) {
+                            case R.id.radioButton1:
+                                fragment = fragments.get(0);
+                                break;
+                            case R.id.radioButton2:
+                                fragment = fragments.get(1);
+                                break;
+                            case R.id.radioButton3:
+                                fragment = fragments.get(2);
+                                break;
+                            case R.id.radioButton4:
+                                fragment = fragments.get(3);
+                                break;
+                        }
+                        load(fragment);
+                    }
+                }
         );
-
-
     }
 
     private void load(Fragment f) {
