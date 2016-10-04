@@ -24,6 +24,7 @@ public class SplashActivity extends AppCompatActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
         if (hasFocus && Build.VERSION.SDK_INT >= 19) {
             View decorView = getWindow().getDecorView();
+
             decorView.setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                             | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
