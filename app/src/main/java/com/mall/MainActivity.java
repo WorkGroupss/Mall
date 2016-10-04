@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                                                   @Override
                                                   public void onCheckedChanged(RadioGroup radioGroup, int i) {
                                                       Fragment fragment = null;
+                                                      if (i==R.id.radioButtonX){
+                                                          return;
+                                                      }
                                                       switch (i) {
                                                           case R.id.radioButton1:
                                                               fragment = fragments.get(0);

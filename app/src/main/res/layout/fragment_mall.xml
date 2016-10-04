@@ -1,49 +1,13 @@
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.mall.fragment_mall.MallFragment">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.mall.fragment_mall.MallFragment">
 
-    <android.support.design.widget.AppBarLayout
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/mall_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:layout_scrollFlags="scroll|enterAlways"
-            >
-            <ImageView
-                android:id="@+id/mall_search"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@mipmap/ic_launcher"/>
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:text="商城"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:layout_marginLeft="130dp"
-                />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginLeft="100dp"/>
-        </android.support.v7.widget.Toolbar>
-        <android.support.design.widget.TabLayout
-            android:id="@+id/mall_tab"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            app:tabIndicatorColor="#ffff4455"
-            app:tabSelectedTextColor="#ff8899ff">
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"/>
 
-        </android.support.design.widget.TabLayout>
-    </android.support.design.widget.AppBarLayout>
-
-
-
-</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
