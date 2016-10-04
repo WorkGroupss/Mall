@@ -1,5 +1,6 @@
 package com.mall;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.mall.activity.SearchActivity;
 import com.mall.fragment_lesson.LessonFragment;
 import com.mall.fragment_mall.MallFragment;
 import com.mall.fragment_mine.MineFragemnt;
@@ -107,6 +109,12 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    public void search(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }
