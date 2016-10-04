@@ -1,9 +1,12 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 tools:context="com.mall.fragment_mall.MallFragment">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mall.fragment_mall.MallFragment"
+    android:orientation="vertical">
+
             <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -33,9 +36,19 @@
                     android:id="@+id/mall_tab"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    app:tabBackground="@drawable/tab_item"
                     app:tabIndicatorColor="#ffff4455"
-                    app:tabSelectedTextColor="#ff8899ff">
+                    app:tabSelectedTextColor="#000"
+                    app:tabGravity="center"
+
+                    >
                 </android.support.design.widget.TabLayout>
             </android.support.design.widget.AppBarLayout>
-
-</android.support.design.widget.CoordinatorLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mall_vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+            </android.support.v4.view.ViewPager>
+</LinearLayout>
