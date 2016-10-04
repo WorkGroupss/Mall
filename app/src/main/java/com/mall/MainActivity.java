@@ -1,22 +1,17 @@
 package com.mall;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Gravity;
 import android.view.KeyEvent;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mall.fragment_lesson.Lesson_fragment;
-import com.mall.fragment_mall.mall_fragment;
-import com.mall.fragment_mine.mine_fragment;
-import com.mall.fragment_shoppingcart.cart_fragment;
+import com.mall.fragment_lesson.LessonFragment;
+import com.mall.fragment_mall.MallFragment;
+import com.mall.fragment_mine.MineFragemnt;
+import com.mall.fragment_shoppingcart.CartFragment;
 
 import java.util.ArrayList;
 
@@ -34,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initshow() {
-        fragments.add(new Lesson_fragment());
-        fragments.add(new mall_fragment());
-        fragments.add(new cart_fragment());
-        fragments.add(new mine_fragment());
+        fragments.add(new LessonFragment());
+        fragments.add(new MallFragment());
+        fragments.add(new CartFragment());
+        fragments.add(new MineFragemnt());
 
         currentfg = fragments.get(0);
         getSupportFragmentManager().beginTransaction().add(R.id.content, currentfg).commit();
