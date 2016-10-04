@@ -12,10 +12,10 @@ import com.mall.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class cart_fragment extends Fragment {
+public class CartFragment extends Fragment {
 
 
-    public cart_fragment() {
+    public CartFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class cart_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lesson_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_cart, container, false);
     }
 
 }
