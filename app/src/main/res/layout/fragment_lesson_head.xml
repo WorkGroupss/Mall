@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="620px">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#f2f2f2" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_head"
+            android:layout_width="match_parent"
+            android:layout_height="470px"
+            android:layout_marginTop="20px"></android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40px"
+            android:background="#20000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="推荐：迪奥新品口红试色"
+            android:textColor="#fefefe"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:id="@+id/vp_head_points"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#f2f2f2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/vp_head_imageView1"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:background="@android:drawable/presence_online" />
+
+            <ImageView
+                android:id="@+id/vp_head_imageView2"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:layout_marginLeft="20px"
+                android:background="@android:drawable/presence_invisible" />
+
+            <ImageView
+                android:id="@+id/vp_head_imageView3"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:layout_marginLeft="20px"
+                android:background="@android:drawable/presence_invisible" />
+
+            <ImageView
+                android:id="@+id/vp_head_imageView4"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:layout_marginLeft="20px"
+                android:background="@android:drawable/presence_invisible" />
+        </LinearLayout>
+
+</FrameLayout>

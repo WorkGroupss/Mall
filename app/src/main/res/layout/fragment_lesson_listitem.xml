@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    >
+
+    <ImageView
+        android:layout_width="76px"
+        android:layout_height="76px"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="10px"
+        android:id="@+id/iv_name" />
+
+    <TextView
+        android:text="甜妹儿"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_name"
+        android:layout_toRightOf="@+id/iv_name"
+        android:layout_toEndOf="@+id/iv_name"
+        android:layout_marginLeft="10px"
+        android:textColor="#333"
+        android:textSize="30px"
+        android:id="@+id/tv_name" />
+
+    <TextView
+        android:text="美妆护肤pou主"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="10px"
+        android:layout_alignLeft="@+id/tv_name"
+        android:textSize="20px"
+        android:textColor="#808080"
+        android:id="@+id/tv_call" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_call"
+        android:layout_margin="30px"
+        android:text="11:50"
+        android:textColor="#808080"
+        android:textSize="24px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pic"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="226px"
+        android:layout_below="@+id/iv_name"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:gravity="center"
+        android:layout_marginTop="10px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView2"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView3"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_testcolor"
+        android:layout_width="34px"
+        android:layout_height="32px"
+        android:layout_below="@+id/ll_pic"
+        android:layout_alignLeft="@+id/ll_pic"
+        android:layout_marginTop="20px"
+        app:srcCompat="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_testcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="口红试色"
+        android:textSize="21px"
+        android:layout_toRightOf="@+id/iv_testcolor"
+        android:layout_alignBottom="@+id/iv_testcolor"
+        android:layout_marginLeft="10px"
+        android:textColor="#666"/>
+
+
+    <TextView
+        android:id="@+id/tv_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2200"
+        android:layout_alignRight="@id/ll_pic"
+        android:layout_alignBottom="@+id/iv_testcolor"
+        android:layout_marginLeft="10px"
+        android:textSize="19px"
+        android:textColor="#333"/>
+    <ImageView
+        android:id="@+id/iv_heart"
+        android:layout_width="30px"
+        android:layout_height="26px"
+        android:layout_toLeftOf="@+id/tv_heart"
+        android:layout_alignBottom="@+id/tv_heart"
+        android:layout_marginLeft="10px"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+
+    <TextView
+        android:id="@+id/tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1232"
+        android:textSize="19px"
+        android:layout_toLeftOf="@+id/iv_heart"
+        android:layout_alignBottom="@+id/iv_testcolor"
+        android:layout_marginLeft="10px"
+        android:textColor="#333"/>
+    <ImageView
+        android:id="@+id/iv_zan"
+        android:layout_width="30px"
+        android:layout_height="26px"
+        android:layout_toLeftOf="@+id/tv_zan"
+        android:layout_alignBottom="@+id/tv_zan"
+        app:srcCompat="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_testcolor"
+        android:text="最近新入的以及最常用的口红。"
+        android:textColor="#333"
+        android:layout_marginTop="20px"
+        android:layout_alignLeft="@+id/ll_pic"
+        android:textSize="25px"/>
+    <TextView
+        android:id="@+id/tv_artical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/ll_pic"
+        android:textSize="25px"
+        android:textColor="#4d4d4d"
+        android:text="YSL唇釉09号色+Armani黑管506是我进来常用的颜色了6是我进来常用的颜色了6是我进来常用的颜色了，都"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/tv_artical"
+        android:layout_marginTop="20px"
+        />
+
+</RelativeLayout>
