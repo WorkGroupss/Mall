@@ -48,6 +48,7 @@ public class FirstRVAdapter extends RecyclerView.Adapter<FirstRVAdapter.Holder>{
     public void onBindViewHolder(Holder holder, int position) {
         String url = datas.get(position).picSmall;
         String imageUrl = url.split("!")[0];
+
         Picasso.with(mContext).load(imageUrl).into(holder.picMall);
         holder.productTitle.setText(datas.get(position).productTitle);
         holder.recommend.setText(datas.get(position).recommend);
