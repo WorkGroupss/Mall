@@ -1,6 +1,7 @@
 package com.mall.fragment_mall;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mall.R;
+import com.mall.activity.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -42,7 +44,7 @@ public class MallFragment extends Fragment implements TabLayout.OnTabSelectedLis
         tab.setTabMode(TabLayout.MODE_SCROLLABLE);
         int width = getResources().getDisplayMetrics().widthPixels;
         tab.setMinimumWidth(width);
-        tab.setOnTabSelectedListener(this);
+        tab.addOnTabSelectedListener(this);
         for (int i=0;i<tss.length;i++){
             tab.addTab(tab.newTab().setText(tss[i]));
         }
@@ -59,6 +61,10 @@ public class MallFragment extends Fragment implements TabLayout.OnTabSelectedLis
             ts.add(tss[i]);
         }
 
+    }
+    public void search(View view){
+        Intent intent = new Intent(getContext(), SearchActivity.class);
+        startActivity(intent);
     }
 
     @Override
