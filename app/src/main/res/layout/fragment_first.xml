@@ -47,6 +47,12 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#e4e4e4"></View>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/first_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
 
 
 
