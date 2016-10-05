@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
     >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="76px"
+        android:layout_height="76px"
         app:srcCompat="@mipmap/ic_launcher"
         android:layout_marginLeft="30px"
-        android:layout_marginStart="30px"
         android:layout_marginTop="10px"
         android:id="@+id/iv_name" />
 
@@ -31,11 +31,23 @@
         android:text="美妆护肤pou主"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/iv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="10px"
         android:layout_alignLeft="@+id/tv_name"
         android:textSize="20px"
         android:textColor="#808080"
         android:id="@+id/tv_call" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_call"
+        android:layout_margin="30px"
+        android:text="11:50"
+        android:textColor="#808080"
+        android:textSize="24px"/>
 
     <LinearLayout
         android:id="@+id/ll_pic"
