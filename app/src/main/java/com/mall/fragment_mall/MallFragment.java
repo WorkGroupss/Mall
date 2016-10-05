@@ -44,7 +44,7 @@ public class MallFragment extends Fragment implements TabLayout.OnTabSelectedLis
         tab.setTabMode(TabLayout.MODE_SCROLLABLE);
         int width = getResources().getDisplayMetrics().widthPixels;
         tab.setMinimumWidth(width);
-        tab.setOnTabSelectedListener(this);
+        tab.addOnTabSelectedListener(this);
         for (int i=0;i<tss.length;i++){
             tab.addTab(tab.newTab().setText(tss[i]));
         }
