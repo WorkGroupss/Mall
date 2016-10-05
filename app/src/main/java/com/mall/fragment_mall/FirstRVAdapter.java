@@ -1,5 +1,6 @@
 package com.mall.fragment_mall;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 import com.mall.R;
 import com.mall.javaBean.Goods;
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -19,6 +21,17 @@ import java.util.ArrayList;
 
 public class FirstRVAdapter extends RecyclerView.Adapter<FirstRVAdapter.Holder>{
     ArrayList<Goods> datas;
+    Context mContext;
+
+    public FirstRVAdapter(ArrayList<Goods> datas, Context context) {
+        this.datas = datas;
+        mContext = context;
+    }
+
+    public FirstRVAdapter(ArrayList<Goods> datas) {
+        this.datas = datas;
+    }
+
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         View layout = View.inflate(parent.getContext(), R.layout.first_recycler_item,null);
@@ -33,6 +46,9 @@ public class FirstRVAdapter extends RecyclerView.Adapter<FirstRVAdapter.Holder>{
 
     @Override
     public void onBindViewHolder(Holder holder, int position) {
+        String url = datas.get(position).picSmall;
+        String imageUrl = url.split("!")[0];
+        Picasso.with(mContext).load(imageUrl).into(holder.picMall);
         holder.productTitle.setText(datas.get(position).productTitle);
         holder.recommend.setText(datas.get(position).recommend);
         holder.proPrice.setText(datas.get(position).proPrice);

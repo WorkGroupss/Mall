@@ -24,4 +24,6 @@ public class Goods  implements Serializable {
         this.salesCount = salesCount;
     }
 
+    public Goods() {
+    }
 }
