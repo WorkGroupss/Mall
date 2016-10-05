@@ -49,6 +49,7 @@ public class FirstFragemnt extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        fadapter  = new FirstRVAdapter(list,context);
         initData(page);
 
     }
@@ -75,11 +76,13 @@ public class FirstFragemnt extends Fragment {
                 System.out.println("--s" + a);
                 String de = a.getString("data");
                 System.out.println("--s" + de);
-                final List<Goods> good = JSON.parseArray(de, Goods.class);
+                final List<Goods> good = JSONArray.parseArray(de, Goods.class);
                 hand.post(new Runnable() {
                     @Override
                     public void run() {
                         list.addAll(good);
+                        System.out.println("--s" + good.get(2).productTitle);
+
                         //fadapter.notifyDataSetChanged();
                     }
                 });
@@ -98,7 +101,7 @@ public class FirstFragemnt extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);
-        rv.setAdapter(new FirstRVAdapter(list,getContext()));
+        rv.setAdapter(fadapter);
 
         return view;
     }
