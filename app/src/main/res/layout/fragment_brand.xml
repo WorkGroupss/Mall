@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mall.fragment_search.BrandFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="#f2f2f2"
+        android:textColor="#666666"
+        android:textSize="28px"
+        android:text="热门品牌" />
+
+    <GridView
+        android:id="@+id/brand_grid"
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:numColumns="4">
+
+    </GridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="#f2f2f2"
+        android:textColor="#666666"
+        android:textSize="28px"
+        android:text="A"/>
+
+    <ListView
+        android:id="@+id/brand_list"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+</LinearLayout>

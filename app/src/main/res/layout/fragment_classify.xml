@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#f0f1f2"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/left_icon_1"
+                android:text="  护肤"
+                android:textColor="#ea2000" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/leftbar_icon_2"
+                android:text="  日化清洁" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/leftbar_icon_3"
+                android:text="  彩妆" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/leftbar_icon_4"
+                android:text="  香水" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/leftbar_icon_5"
+                android:text="  身体护理" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/leftbar_icon_6"
+                android:text="  化妆工具" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/radioButton7"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:text="健康保养" />-->
+        </RadioGroup>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/search_grid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:numColumns="3">
+
+    </GridView>
+
+
+</LinearLayout>
