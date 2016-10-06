@@ -31,13 +31,14 @@
         android:textSize="28px"
         android:text="A"/>
 
-    <ListView
+
+    <ExpandableListView
         android:id="@+id/brand_list"
         android:layout_width="match_parent"
-
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:groupIndicator="@null">
 
-    </ListView>
+    </ExpandableListView>
 
 </LinearLayout>
