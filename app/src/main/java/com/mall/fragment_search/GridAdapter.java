@@ -17,9 +17,10 @@ import java.util.ArrayList;
 
 public class GridAdapter extends BaseAdapter{
 
-    ArrayList<String> datas;
+    ArrayList<Integer> datas;
+    private ImageView imageView;
 
-    public GridAdapter(ArrayList<String> datas) {
+    public GridAdapter(ArrayList<Integer> datas) {
         this.datas = datas;
     }
 
@@ -42,8 +43,10 @@ public class GridAdapter extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView== null){
             convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.expand_child_item3,null);
-            ImageView imageView = (ImageView) convertView.findViewById(R.id.expanded_imageview);
-
+            imageView = (ImageView) convertView.findViewById(R.id.expanded_imageview);
+            imageView.setImageResource(datas.get(position));
+        }else {
+            imageView.setImageResource(datas.get(position));
         }
         return convertView;
     }

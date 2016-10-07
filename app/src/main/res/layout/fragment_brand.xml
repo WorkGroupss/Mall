@@ -2,17 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.mall.fragment_search.BrandFragment">
 
 
     <ExpandableListView
         android:id="@+id/brand_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:groupIndicator="@null">
 
     </ExpandableListView>
+
+    <com.mall.fragment_search.SlideBar
+        android:layout_width="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="400dp" />
 
 </LinearLayout>

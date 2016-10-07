@@ -100,6 +100,7 @@
     <GridView
         android:id="@+id/search_grid2"
         android:layout_width="0dp"
+        android:layout_margin="5dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:numColumns="3">

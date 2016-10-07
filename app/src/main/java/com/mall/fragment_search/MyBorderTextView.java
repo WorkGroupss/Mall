@@ -20,11 +20,12 @@ public class MyBorderTextView extends TextView{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Paint paint = new Paint();
-        paint.setColor(0xff8181);
-        canvas.drawLine(0,0,this.getWidth()-1,0,paint);
-        canvas.drawLine(0,0,0,this.getHeight()-1,paint);
-        canvas.drawLine(this.getWidth()-1,0,this.getWidth()-1,this.getHeight()-1,paint);
-        canvas.drawLine(0,this.getHeight()-1,this.getWidth()-1,this.getHeight()-1,paint);
+        paint.setColor(0XFFFF8181);
+        paint.setStrokeWidth(3);
+        canvas.drawLine(3,3,this.getWidth()-3,3,paint);
+        canvas.drawLine(3,3,3,this.getHeight()-3,paint);
+        canvas.drawLine(this.getWidth()-3,3,this.getWidth()-3,this.getHeight()-3,paint);
+        canvas.drawLine(3,this.getHeight()-3,this.getWidth()-3,this.getHeight()-3,paint);
 
     }
 }

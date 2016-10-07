@@ -31,7 +31,7 @@ public class ClassifyFragment extends Fragment{
         View view = inflater.inflate(R.layout.fragment_classify, container, false);
 
         grid = (GridView)view.findViewById(R.id.search_grid2);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),R.layout.classify_item);
+
         ArrayList<String> datas = new ArrayList<>();
         datas.add("洁面");
         datas.add("化妆水");
@@ -46,7 +46,7 @@ public class ClassifyFragment extends Fragment{
         datas.add("护肤套装");
         datas.add("其他护肤品");
 
-        adapter.addAll(datas);
+        ClassifyGridAdapter adapter = new ClassifyGridAdapter(datas);
         grid.setAdapter(adapter);
 
         return view;
