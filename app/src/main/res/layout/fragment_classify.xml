@@ -46,7 +46,7 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="#ffffff"
+                android:background="@drawable/navigation_background"
                 android:drawableLeft="@drawable/navigation_3"
                 android:textColor="@color/navigation_bottom"
                 android:text="  彩妆" />
@@ -57,7 +57,7 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="#ffffff"
+                android:background="@drawable/navigation_background"
                 android:drawableLeft="@drawable/navigation_4"
                 android:textColor="@color/navigation_bottom"
                 android:text="  香水" />
@@ -68,7 +68,7 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="#ffffff"
+                android:background="@drawable/navigation_background"
                 android:drawableLeft="@drawable/navigation_5"
                 android:textColor="@color/navigation_bottom"
                 android:text="  身体护理" />
@@ -79,7 +79,7 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="#ffffff"
+                android:background="@drawable/navigation_background"
                 android:drawableLeft="@drawable/navigation_6"
                 android:textColor="@color/navigation_bottom"
                 android:text="  化妆工具" />
@@ -90,7 +90,7 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="#ffffff"
+                android:background="@drawable/navigation_background"
                 android:drawableLeft="@drawable/navigation_7"
                 android:textColor="@color/navigation_bottom"
                 android:text="  健康保养" />
