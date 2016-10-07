@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import com.mall.MainActivity;
@@ -21,6 +22,8 @@ public class ExpandAdapter extends BaseExpandableListAdapter{
 
     ArrayList<String> parentdatas;
     Map<String,ArrayList<String>> map;
+    ArrayList<String> datas = new ArrayList<>();
+
 
     public ExpandAdapter(Map<String, ArrayList<String>> map, ArrayList<String> parentdatas) {
         this.map = map;
@@ -83,14 +86,19 @@ public class ExpandAdapter extends BaseExpandableListAdapter{
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         String key = parentdatas.get(groupPosition);
         String info = map.get(key).get(childPosition);
-        if (convertView == null){
+        if(groupPosition==0){
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.expand_child_item1,null);
+            GridView gridView= (GridView) convertView.findViewById(R.id.brand_grid);
+            gridView.setAdapter(new GridAdapter(parentdatas));
+            return convertView;
+        }else {
             convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.expand_child_item2,null);
-
+            TextView tv2 = (TextView) convertView.findViewById(R.id.child2);
+            tv2.setText(info);
+            return convertView;
         }
 
-        TextView tv2 = (TextView) convertView.findViewById(R.id.child2);
-        tv2.setText(info);
-        return tv2;
+
     }
 
     @Override

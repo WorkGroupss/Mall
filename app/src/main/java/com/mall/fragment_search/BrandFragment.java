@@ -43,7 +43,7 @@ public class BrandFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_brand, container, false);
         ExpandableListView listView = (ExpandableListView) view.findViewById(R.id.brand_list);
         name=getContext().getResources().getStringArray(R.array.brand);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
             parentDatas.add("AAA"+i);
         }
 
