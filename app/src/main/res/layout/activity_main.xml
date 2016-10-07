@@ -43,7 +43,8 @@
                     android:button="@null"
                     android:checked="true"
                     android:gravity="center"
-                    android:drawableTop="@drawable/gongke_tool_nor_icon"
+                    android:drawableTop="@drawable/button_lesson"
+                    android:textColor="@color/navigation_bottom"
                     android:text="功课"
                      />
 
@@ -55,7 +56,8 @@
                     android:button="@null"
                     android:gravity="center"
                     android:text="商城"
-                    android:drawableTop="@drawable/shop_tool_nor_icon"
+                    android:drawableTop="@drawable/button_mall"
+                    android:textColor="@color/navigation_bottom"
                      />
                 <RadioButton
                     android:id="@+id/radioButtonX"
@@ -64,7 +66,6 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-
                     android:drawableTop="@drawable/fabiao_tool_icon"
                      />
                 <RadioButton
@@ -75,7 +76,8 @@
                     android:button="@null"
                     android:gravity="center"
                     android:text="购物车"
-                    android:drawableTop="@drawable/shoping_tool_nor_icon"
+                    android:textColor="@color/navigation_bottom"
+                    android:drawableTop="@drawable/button_mall"
                      />
                 <RadioButton
                     android:id="@+id/radioButton4"
@@ -84,7 +86,8 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:drawableTop="@drawable/my_tool_nor_icon"
+                    android:textColor="@color/navigation_bottom"
+                    android:drawableTop="@drawable/button_mine"
                     android:text="我"
                      />
             </RadioGroup>
