@@ -1,42 +1,23 @@
-<android.support.design.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.mall.fragment_mall.FirstFragemnt">
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"></View>
-            <WebView
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="255dp">
-            </WebView>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="130dp">
-                <ImageView
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"/>
-                <ImageView
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"/>
-            </LinearLayout>
+            </View>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
@@ -53,26 +34,19 @@
                 android:textSize="18sp"
                 android:gravity="center"
                 android:textColor="#666666"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#e4e4e4"></View>
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/first_recycler"
-                android:background="#ff5"
-                android:layout_width="match_parent"
-                android:layout_height="400dp">
-            </android.support.v7.widget.RecyclerView>
         </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/first_item_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    </android.support.v4.widget.NestedScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/first_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 
 
-
-
-
-
-
-
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

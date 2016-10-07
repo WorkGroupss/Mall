@@ -73,9 +73,7 @@ public class FirstFragemnt extends Fragment {
             ArrayList<Goods> datas = new ArrayList<>();
             try {
                 JSONObject a = JSON.parseObject(json);
-                System.out.println("--s" + a);
                 String de = a.getString("data");
-                System.out.println("--s" + de);
                 final List<Goods> good = JSONArray.parseArray(de, Goods.class);
                 hand.post(new Runnable() {
                     @Override
@@ -83,7 +81,7 @@ public class FirstFragemnt extends Fragment {
                         list.addAll(good);
                         System.out.println("--s" + good.get(2).productTitle);
 
-                        //fadapter.notifyDataSetChanged();
+                        fadapter.notifyDataSetChanged();
                     }
                 });
             } catch (Exception e) {
@@ -102,7 +100,7 @@ public class FirstFragemnt extends Fragment {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);
         rv.setAdapter(fadapter);
-
+        rv.setNestedScrollingEnabled(false);
         return view;
     }
 

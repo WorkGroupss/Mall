@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         switch (i) {
                             case R.id.radioButton1:
                                 fragment = fragments.get(0);
+
                                 break;
                             case R.id.radioButton2:
                                 fragment = fragments.get(1);
