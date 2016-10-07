@@ -68,16 +68,6 @@ public class BrandFragment extends Fragment {
                 return true;
             }
         });
-
-
-        for (int i = 0; i < 12; i++) {
-            datas2.add("品牌"+i);
-        }
-        GridView gridView = (GridView) view.findViewById(R.id.brand_grid);
-
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,datas2);
-        gridView.setAdapter(adapter2);
-
         return view;
     }
 
