@@ -21,13 +21,13 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#ffffff"
+                android:background="@color/navigation_background"
                 android:button="@null"
                 android:checked="true"
                 android:gravity="center_vertical"
                 android:drawableLeft="@mipmap/left_icon_1"
                 android:text="  护肤"
-                android:textColor="#ea2000" />
+                android:textColor="@color/navigation_bottom" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
@@ -35,7 +35,9 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_2"
+                android:textColor="@color/navigation_bottom"
                 android:text="  日化清洁" />
 
             <RadioButton
@@ -44,7 +46,9 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_3"
+                android:textColor="@color/navigation_bottom"
                 android:text="  彩妆" />
 
             <RadioButton
@@ -53,7 +57,9 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_4"
+                android:textColor="@color/navigation_bottom"
                 android:text="  香水" />
 
             <RadioButton
@@ -62,7 +68,9 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_5"
+                android:textColor="@color/navigation_bottom"
                 android:text="  身体护理" />
 
             <RadioButton
@@ -71,7 +79,9 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_6"
+                android:textColor="@color/navigation_bottom"
                 android:text="  化妆工具" />
 
             <RadioButton
@@ -80,8 +90,10 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
+                android:background="@color/navigation_background"
                 android:drawableLeft="@mipmap/left_icon_7"
-                android:text="健康保养" />
+                android:textColor="@color/navigation_bottom"
+                android:text="  健康保养" />
         </RadioGroup>
     </LinearLayout>
 
