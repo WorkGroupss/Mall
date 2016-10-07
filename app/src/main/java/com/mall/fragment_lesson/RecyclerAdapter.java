@@ -3,12 +3,15 @@ package com.mall.fragment_lesson;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mall.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.mall.R.id.view;
 
 /**
  * Created by Administrator on 2016/10/5.
@@ -52,10 +55,28 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
          //这里设置各个数据，例如
         if(getItemViewType(position)==TYPE_HEADER) return;
+
          holder.tv_name.setText(datas.get(position-1));
+
+        holder.iv_zan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int zan = Integer.parseInt(holder.tv_zan.getText().toString()) + 1;
+                holder.iv_zan.setClickable(false);
+                holder.tv_zan.setText(zan+"");
+            }
+        });
+        holder.iv_heart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int heart = Integer.parseInt(holder.tv_heart.getText().toString()) + 1;
+                holder.iv_heart.setClickable(false);
+                holder.tv_heart.setText(heart+"");
+            }
+        });
     }
 
     @Override
@@ -63,8 +84,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         return datas.size()+1;
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolder extends RecyclerView.ViewHolder  {
         TextView tv_name, tv_call, tv_testcolor, tv_zan, tv_heart, tv_title, tv_artical;
+        ImageView iv_zan,iv_heart;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -76,6 +98,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             tv_heart = (TextView) itemView.findViewById(R.id.tv_heart);
             tv_title = (TextView) itemView.findViewById(R.id.tv_title);
             tv_artical = (TextView) itemView.findViewById(R.id.tv_artical);
+
+            iv_zan = (ImageView) itemView.findViewById(R.id.iv_zan);
+            iv_heart = (ImageView) itemView.findViewById(R.id.iv_heart);
+
         }
     }
 }

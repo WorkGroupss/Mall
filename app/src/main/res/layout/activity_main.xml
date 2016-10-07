@@ -65,7 +65,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
                     android:drawableTop="@drawable/fabiao_tool_icon"
                      />
                 <RadioButton
