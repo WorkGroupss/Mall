@@ -133,7 +133,7 @@ public class OtherFragment extends Fragment  {
         mRv.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new OtherAdapter(list);
         mRv.setAdapter(mAdapter);
-        mRv.setNestedScrollingEnabled(false);
+
         return view;
     }
 
