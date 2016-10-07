@@ -30,7 +30,7 @@ public class ClassifyFragment extends Fragment{
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_classify, container, false);
 
-        grid = (GridView)view.findViewById(R.id.search_grid);
+        grid = (GridView)view.findViewById(R.id.search_grid2);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_list_item_1);
         ArrayList<String> datas = new ArrayList<>();
         datas.add("洁面");
