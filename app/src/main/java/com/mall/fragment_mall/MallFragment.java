@@ -40,23 +40,13 @@ public class MallFragment extends Fragment implements TabLayout.OnTabSelectedLis
     }
 
     private void initView() {
-        TabLayout tab = (TabLayout) view.findViewById(R.id.mall_tab);
-        tab.setTabMode(TabLayout.MODE_SCROLLABLE);
-        int width = getResources().getDisplayMetrics().widthPixels;
-        tab.setMinimumWidth(width);
-        tab.addOnTabSelectedListener(this);
-        for (int i=0;i<tss.length;i++){
-            tab.addTab(tab.newTab().setText(tss[i]));
-        }
-
         ViewPager vp = (ViewPager) view.findViewById(R.id.mall_vp);
         vp.setAdapter(new VPAdapter(getChildFragmentManager(),ts,vs));
-        tab.setupWithViewPager(vp);
     }
 
     private void initData() {
         vs.add(new FirstFragemnt());
-        vs.add(new OtherFragment());
+
         for (int i = 0;i<tss.length;i++){
             ts.add(tss[i]);
         }

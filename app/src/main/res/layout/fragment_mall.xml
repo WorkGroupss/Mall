@@ -47,15 +47,6 @@
                 android:src="@mipmap/ic_launcher" />
         </android.support.v7.widget.Toolbar>
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/mall_tab"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            app:tabBackground="@drawable/tab_item"
-            app:tabGravity="center"
-            app:tabIndicatorColor="#ffff4455"
-            app:tabSelectedTextColor="#000">
-        </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView

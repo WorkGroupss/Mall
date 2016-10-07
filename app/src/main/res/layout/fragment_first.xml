@@ -7,12 +7,6 @@
     android:orientation="vertical"
     tools:context="com.mall.fragment_mall.FirstFragemnt">
 
-    <android.support.v4.widget.NestedScrollView
-        android:id="@+id/nest"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
         <LinearLayout
@@ -45,14 +39,15 @@
                 android:textColor="#666666"/>
 
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/first_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/first_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+
 
 
 </android.support.design.widget.CoordinatorLayout>
