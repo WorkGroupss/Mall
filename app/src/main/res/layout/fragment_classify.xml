@@ -21,11 +21,11 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/navigation_background"
+                android:background="#ffffff"
                 android:button="@null"
                 android:checked="true"
                 android:gravity="center_vertical"
-                android:drawableLeft="@mipmap/left_icon_1"
+                android:drawableLeft="@drawable/navigation_1"
                 android:text="  护肤"
                 android:textColor="@color/navigation_bottom" />
 
@@ -35,8 +35,8 @@
                 android:layout_height="40dp"
                 android:button="@null"
                 android:gravity="center_vertical"
-                android:background="@drawable/navigation_background"
-                android:drawableLeft="@mipmap/left_icon_2"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/navigation_2"
                 android:textColor="@color/navigation_bottom"
                 android:text="  日化清洁" />
 
@@ -47,7 +47,7 @@
                 android:button="@null"
                 android:gravity="center_vertical"
                 android:background="#ffffff"
-                android:drawableLeft="@mipmap/left_icon_3"
+                android:drawableLeft="@drawable/navigation_3"
                 android:textColor="@color/navigation_bottom"
                 android:text="  彩妆" />
 
@@ -58,7 +58,7 @@
                 android:button="@null"
                 android:gravity="center_vertical"
                 android:background="#ffffff"
-                android:drawableLeft="@mipmap/left_icon_4"
+                android:drawableLeft="@drawable/navigation_4"
                 android:textColor="@color/navigation_bottom"
                 android:text="  香水" />
 
@@ -69,7 +69,7 @@
                 android:button="@null"
                 android:gravity="center_vertical"
                 android:background="#ffffff"
-                android:drawableLeft="@mipmap/left_icon_5"
+                android:drawableLeft="@drawable/navigation_5"
                 android:textColor="@color/navigation_bottom"
                 android:text="  身体护理" />
 
@@ -80,7 +80,7 @@
                 android:button="@null"
                 android:gravity="center_vertical"
                 android:background="#ffffff"
-                android:drawableLeft="@mipmap/left_icon_6"
+                android:drawableLeft="@drawable/navigation_6"
                 android:textColor="@color/navigation_bottom"
                 android:text="  化妆工具" />
 
@@ -91,7 +91,7 @@
                 android:button="@null"
                 android:gravity="center_vertical"
                 android:background="#ffffff"
-                android:drawableLeft="@mipmap/left_icon_7"
+                android:drawableLeft="@drawable/navigation_7"
                 android:textColor="@color/navigation_bottom"
                 android:text="  健康保养" />
         </RadioGroup>
