@@ -3,7 +3,12 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:paddingLeft="4dp"
               android:background="#fff">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"></View>
     <FrameLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -38,12 +43,14 @@
         android:paddingLeft="10dp"
         android:singleLine="false"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
+        android:maxLines="2"
         android:text="护肤界人手一瓶，无色无味，镇定肌肤。含微量元素和二氧化硅，可在肌肤表面形成舒缓、透气保护膜。"/>
     <LinearLayout
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:paddingLeft="10dp">
         <TextView
             android:id="@+id/proPrice"
             android:layout_width="wrap_content"
@@ -65,7 +72,7 @@
             android:id="@+id/add_cart"
             android:layout_width="120dp"
             android:layout_height="45dp"
-            android:background="@drawable/kaishitiyan"
+            android:background="@drawable/jiarugouwuche"
             android:text="加入购物车"
             />
     </LinearLayout>

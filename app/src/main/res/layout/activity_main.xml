@@ -43,6 +43,7 @@
                     android:button="@null"
                     android:checked="true"
                     android:gravity="center"
+                    android:drawableTop="@drawable/gongke_tool_nor_icon"
                     android:text="功课"
                      />
 
@@ -54,6 +55,7 @@
                     android:button="@null"
                     android:gravity="center"
                     android:text="商城"
+                    android:drawableTop="@drawable/shop_tool_nor_icon"
                      />
                 <RadioButton
                     android:id="@+id/radioButtonX"
@@ -62,7 +64,8 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:background="@mipmap/ic_launcher"
+
+                    android:drawableTop="@drawable/fabiao_tool_icon"
                      />
                 <RadioButton
                     android:id="@+id/radioButton3"
@@ -72,6 +75,7 @@
                     android:button="@null"
                     android:gravity="center"
                     android:text="购物车"
+                    android:drawableTop="@drawable/shoping_tool_nor_icon"
                      />
                 <RadioButton
                     android:id="@+id/radioButton4"
@@ -80,6 +84,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
+                    android:drawableTop="@drawable/my_tool_nor_icon"
                     android:text="我"
                      />
             </RadioGroup>

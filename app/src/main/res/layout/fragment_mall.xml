@@ -57,16 +57,12 @@
             app:tabSelectedTextColor="#000"></android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
-  <android.support.v4.widget.NestedScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-      <com.mall.fragment_mall.WrapContentHeightViewPager
+      <com.mall.fragment_mall.WrapContentHeightViewPagerandroid.support.v4.view.ViewPager
           android:id="@+id/mall_vp"
           android:layout_width="match_parent"
-          android:layout_height="300dp"
-         ></com.mall.fragment_mall.WrapContentHeightViewPager>
-  </android.support.v4.widget.NestedScrollView>
+          android:layout_height="match_parent"
+         ></com.mall.fragment_mall.WrapContentHeightViewPagerandroid.support.v4.view.ViewPager>
+
 
 </android.support.design.widget.CoordinatorLayout>
