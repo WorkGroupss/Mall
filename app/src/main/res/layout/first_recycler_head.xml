@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="255dp">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#cccccc"></View>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="单品推荐"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#666666"/>
+        </LinearLayout>
+</LinearLayout>
