@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/effect_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@drawable/text_view_border"
+        android:textColor="#f1f2f3"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="减肥瘦身"/>
+</LinearLayout>
