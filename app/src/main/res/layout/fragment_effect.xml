@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     tools:context="com.mall.fragment_search.EffectFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridView
+        android:id="@+id/effect_gridview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="功效页面" />
+        android:numColumns="3"
+        android:layout_height="match_parent">
+
+    </GridView>
 
 </LinearLayout>
