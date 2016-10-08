@@ -1,6 +1,7 @@
 package com.mall.fragment_mall;
 
 import android.content.Context;
+import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +53,7 @@ public class FirstRVAdapter extends RecyclerView.Adapter<FirstRVAdapter.Holder>{
         Picasso.with(mContext).load(imageUrl).into(holder.picMall);
         holder.productTitle.setText(datas.get(position).productTitle);
         holder.recommend.setText(datas.get(position).recommend);
-        holder.proPrice.setText(datas.get(position).proPrice);
+        holder.proPrice.setText("￥"+datas.get(position).proPrice);
         holder.liziPrice.setText(datas.get(position).liziPrice);
         holder.salesCount.setText("已经售出了"+datas.get(position).salesCount+"件");
     }
@@ -71,6 +72,7 @@ public class FirstRVAdapter extends RecyclerView.Adapter<FirstRVAdapter.Holder>{
             recommend = (TextView) itemView.findViewById(R.id.recommend);
             proPrice = (TextView) itemView.findViewById(R.id.proPrice);
             liziPrice = (TextView) itemView.findViewById(R.id.liziPrice);
+            liziPrice.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
             salesCount = (TextView) itemView.findViewById(R.id.salesCount);
         }
 

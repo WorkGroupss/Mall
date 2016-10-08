@@ -9,16 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#e4e4e4"></View>
-    <FrameLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="230dp">
 
         <ImageView
             android:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="190dp"
+            android:layout_alignParentBottom="true"
             android:layout_marginLeft="4dp"
             android:id="@+id/imageView"/>
         <ImageView
@@ -26,54 +26,73 @@
             android:src="@drawable/a"
             android:layout_width="match_parent"
             android:layout_height="230dp"/>
-    </FrameLayout>
+    </RelativeLayout>
     <TextView
+        android:layout_marginTop="5dp"
         android:id="@+id/productTitle"
         android:layout_width="match_parent"
         android:paddingLeft="10dp"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
         android:singleLine="true"
         android:text="法国Avene雅漾舒护活泉水喷雾300ml 补水保湿舒缓肌肤"
-        android:textSize="20sp"
-        android:typeface="serif"
+        android:textSize="18sp"
+        android:textColor="#000"
         android:ellipsize="end"/>
     <TextView
         android:id="@+id/recommend"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
         android:singleLine="false"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:maxLines="2"
         android:text="护肤界人手一瓶，无色无味，镇定肌肤。含微量元素和二氧化硅，可在肌肤表面形成舒缓、透气保护膜。"/>
-    <LinearLayout
-        android:layout_marginTop="5dp"
+    <RelativeLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:paddingLeft="10dp">
-        <TextView
-            android:id="@+id/proPrice"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#f55"
-            android:text="82"/>
-        <TextView
-            android:layout_marginLeft="5dp"
-            android:id="@+id/liziPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="82.99"/>
-        <TextView
-            android:id="@+id/salesCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="已经售出 27271件"/>
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/proPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f55"
+                android:textSize="13sp"
+                android:text="82"/>
+            <TextView
+                android:layout_toRightOf="@+id/proPrice"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/liziPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="82.99"/>
+            <TextView
+                android:layout_toRightOf="@+id/liziPrice"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/salesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="已经售出 27271件"/>
+        </RelativeLayout>
+
         <Button
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
             android:id="@+id/add_cart"
             android:layout_width="120dp"
             android:layout_height="45dp"
             android:background="@drawable/jiarugouwuche"
             android:text="加入购物车"
             />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

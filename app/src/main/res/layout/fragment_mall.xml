@@ -28,7 +28,7 @@
                 android:layout_marginLeft="10dp"
                 android:clickable="true"
                 android:onClick="search"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/search_nav_icon" />
 
             <TextView
                 android:layout_width="50dp"
@@ -44,7 +44,7 @@
                 android:layout_height="20dp"
                 android:layout_marginBottom="12dp"
                 android:layout_marginLeft="125dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/mas_nav_icon" />
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
