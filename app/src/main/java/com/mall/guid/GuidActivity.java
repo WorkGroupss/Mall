@@ -53,12 +53,16 @@ public class GuidActivity extends AppCompatActivity implements ViewPager.OnPageC
         ImageView b = new ImageView(this);
         b.setImageResource(R.drawable.a_2);
         b.setScaleType(ImageView.ScaleType.FIT_XY);
+        ImageView c = new ImageView(this);
+        c.setImageResource(R.drawable.a_3);
+        c.setScaleType(ImageView.ScaleType.FIT_XY);
 
-        View c=View.inflate(this, R.layout.last_guid, null);
+        View d=View.inflate(this, R.layout.last_guid, null);
 
         datas.add(a);
         datas.add(b);
         datas.add(c);
+        datas.add(d);
 
     }
 

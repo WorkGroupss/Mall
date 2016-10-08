@@ -61,12 +61,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
          holder.tv_name.setText(datas.get(position-1));
 
-        holder.iv_zan.setOnClickListener(new View.OnClickListener() {
+        holder.iv_comment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int zan = Integer.parseInt(holder.tv_zan.getText().toString()) + 1;
-                holder.iv_zan.setClickable(false);
-                holder.tv_zan.setText(zan+"");
+                int zan = Integer.parseInt(holder.tv_comment.getText().toString()) + 1;
+                holder.iv_comment.setClickable(false);
+                holder.tv_comment.setText(zan+"");
             }
         });
         holder.iv_heart.setOnClickListener(new View.OnClickListener() {
@@ -85,8 +85,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder  {
-        TextView tv_name, tv_call, tv_testcolor, tv_zan, tv_heart, tv_title, tv_artical;
-        ImageView iv_zan,iv_heart;
+        TextView tv_name, tv_call, tv_testcolor, tv_comment, tv_heart, tv_title, tv_artical;
+        ImageView iv_comment,iv_heart;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -94,12 +94,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             tv_name = (TextView) itemView.findViewById(R.id.tv_name);
             tv_call = (TextView) itemView.findViewById(R.id.tv_call);
             tv_testcolor = (TextView) itemView.findViewById(R.id.tv_testcolor);
-            tv_zan = (TextView) itemView.findViewById(R.id.tv_zan);
+            tv_comment = (TextView) itemView.findViewById(R.id.tv_comment);
             tv_heart = (TextView) itemView.findViewById(R.id.tv_heart);
             tv_title = (TextView) itemView.findViewById(R.id.tv_title);
             tv_artical = (TextView) itemView.findViewById(R.id.tv_artical);
 
-            iv_zan = (ImageView) itemView.findViewById(R.id.iv_zan);
+            iv_comment = (ImageView) itemView.findViewById(R.id.iv_comment);
             iv_heart = (ImageView) itemView.findViewById(R.id.iv_heart);
 
         }

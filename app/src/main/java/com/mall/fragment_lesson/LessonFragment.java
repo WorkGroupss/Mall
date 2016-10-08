@@ -74,7 +74,7 @@ public class LessonFragment extends Fragment {
                 for (int i = 0; i < childCount; i++) {
                     ImageView iv = (ImageView) ll.getChildAt(i);
                     if (position == i) {
-                        iv.setImageResource(android.R.drawable.presence_online);
+                        iv.setImageResource(R.drawable.tixing_content_icon);
                     }else {
                         iv.setImageResource(android.R.drawable.presence_invisible);
                     }
@@ -99,6 +99,4 @@ public class LessonFragment extends Fragment {
         Intent intent = new Intent(getContext(), SearchActivity.class);
         startActivity(intent);
     }
-
-
 }

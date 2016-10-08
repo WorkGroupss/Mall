@@ -13,8 +13,8 @@
 
     <LinearLayout
         android:id="@+id/points"
-        android:layout_width="50dp"
-        android:layout_height="20dp"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
         android:layout_gravity="center_horizontal|bottom"
         android:gravity="center"
         android:orientation="horizontal">
@@ -35,6 +35,12 @@
 
         <ImageView
             android:id="@+id/point3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/presence_invisible" />
+        <ImageView
+            android:id="@+id/point4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
