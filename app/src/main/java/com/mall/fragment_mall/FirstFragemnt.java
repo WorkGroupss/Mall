@@ -2,6 +2,7 @@ package com.mall.fragment_mall;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -92,15 +93,29 @@ public class FirstFragemnt extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first,null);
         RecyclerView rv = (RecyclerView) view.findViewById(R.id.first_recycler);
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);
+        fadapter.setOnItemClickLitener(new FirstRVAdapter.OnItemClickLitener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent= new Intent(getContext(),GoodDetail.class);
+                intent.putExtra("good",list.get(position));
+                startActivity(intent);
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+        });
         rv.setAdapter(fadapter);
         rv.setNestedScrollingEnabled(false);
+
         return view;
     }
 

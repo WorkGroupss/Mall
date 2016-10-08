@@ -15,9 +15,9 @@
         android:layout_height="230dp">
 
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/zhekou"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="4dp"
             android:id="@+id/imageView"/>
@@ -48,9 +48,9 @@
         android:maxLines="2"
         android:text="护肤界人手一瓶，无色无味，镇定肌肤。含微量元素和二氧化硅，可在肌肤表面形成舒缓、透气保护膜。"/>
     <RelativeLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:paddingLeft="10dp">
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
         </RelativeLayout>
 
         <Button
-            android:layout_centerVertical="true"
+
             android:layout_alignParentRight="true"
             android:layout_marginRight="5dp"
             android:id="@+id/add_cart"
@@ -93,6 +93,7 @@
             android:layout_height="45dp"
             android:background="@drawable/jiarugouwuche"
             android:text="加入购物车"
+            android:textColor="#fff"
             />
     </RelativeLayout>
 </LinearLayout>
